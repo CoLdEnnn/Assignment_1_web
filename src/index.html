@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1</title>
+    <style>
+        body{
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .columns{
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    
     <h1 style="text-align: center;">Part 1</h1>
     <h1>Damir Ushkempir</h1>
     <h2>SE-2407</h2>
@@ -26,30 +39,47 @@
     <br>Click if you like it<br>
     <button>Press me</button>
     <h1 style="text-align: center;">Part 2</h1>
-    <table>
-        <tr>
-            <th>Subject</th>
-            <th>Day</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>Design and Analysis of Algorithms</td>
-            <td>Monday</td>
-            <td>16:00-16:50</td>
-        </tr>
-        <tr>
-            <td>Operating Systems</td>
-            <td>Tuesday</td>
-            <td>08:00-8:50</td>
-        </tr>
-        <tr>
-            <td>WEB Technologies</td>
-            <td>Friday</td>
-            <td>18:00-18:50</td>
-        </tr>
-    </table>
-    <form action="">
-        
-    </form>
+    
+    <div class="columns">
+        <div class="column">
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Design and Analysis of Algorithms</td>
+                <td>Monday</td>
+                <td>16:00-16:50</td>
+            </tr>
+            <tr>
+                <td>Operating Systems</td>
+                <td>Tuesday</td>
+                <td>08:00-8:50</td>
+            </tr>
+            <tr>
+                <td>WEB Technologies</td>
+                <td>Friday</td>
+                <td>18:00-18:50</td>
+            </tr>
+        </table>
+        </div>
+    
+        <div class="column">
+            <table>
+                <tr>
+                    <td>
+                    <form>
+                            <input type="text" placeholder="My name" value="Damir"><br>
+                            <input type="email" placeholder="My email" value="240465@astanait.edu.kz" ><br>
+                            <input type="text" placeholder="favorite color" value="Green"><br>
+                            <button>Submit</button>
+                    </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
